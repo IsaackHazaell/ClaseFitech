@@ -32,6 +32,15 @@ void Rectangulo::perimetro()
     cout << "El perimetro es: " << opc_perimetro << endl;
 }
 
+void Rectangulo::area()
+{
+    float opc_area;
+
+    opc_area = largo * ancho;
+
+    cout << "El area es: " << opc_area << endl; 
+}
+
 int main()
 {
     

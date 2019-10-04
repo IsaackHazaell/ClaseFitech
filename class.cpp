@@ -1,9 +1,10 @@
 #include <iostream>
-#include <stdio>
+#include <stdlib.h>
+
 
 using namespace std;
 
-class Rectangulo()
+class Rectangulo
 {
     //Atributos
     private: 
@@ -13,7 +14,7 @@ class Rectangulo()
         Rectangulo(float,float); //Constructor
         void perimetro();
         void area();
-}
+};
 
 //Constructor
 Rectangulo::Rectangulo(float opc_largo, float opc_ancho)
@@ -43,6 +44,13 @@ void Rectangulo::area()
 
 int main()
 {
+    //Instanciar clase o crear objeto
+    Rectangulo rec(5,6);
+
+    //Objeto mandando llamar el metodo de la clase
+    rec.perimetro();
+    rec.area();
     
+    system("pause");
     return 0;
 }

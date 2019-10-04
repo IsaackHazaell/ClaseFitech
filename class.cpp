@@ -44,10 +44,18 @@ void Rectangulo::area()
 
 int main()
 {
+    float largo, ancho;
+    cout << "Conoce el area de un rectangulo" << endl;
+    cout << "Ingresa el largo: " << endl;
+    cin >> largo;
+    cout << "Ingresa el ancho: " << endl;
+    cin >> ancho;
+
     //Instanciar clase o crear objeto
-    Rectangulo rec(5,6);
+    Rectangulo rec(largo, ancho);
 
     //Objeto mandando llamar el metodo de la clase
+    // rec.menu();
     rec.perimetro();
     rec.area();
     

@@ -14,6 +14,12 @@ class Rectangulo()
         void area();
 }
 
+Rectangulo::Rectangulo(float opc_largo, float opc_ancho)
+{
+    largo = opc_largo;
+    ancho = opc_ancho;
+}
+
 int main()
 {
     

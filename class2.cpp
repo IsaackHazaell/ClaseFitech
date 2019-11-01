@@ -10,7 +10,7 @@ class Person
         int age;
         string name;
     public: //Metodos o funcion
-        Person(int, string);
+        Person(int, string); //Constructor
         void read();
         void eat();
         void run();

@@ -31,16 +31,30 @@ Person::Person(string _name, int _age)
     age = _age;
 }
 
+Student::Student(string _name, int _age, string _studentCode, float _finalNote) : Person (_name, _age)
+{
+    studentCode = _studentCode;
+    finalNote = _finalNote;
+}
+
 void Person::showPerson()
 {
     cout << "El nombre es: " << name << endl;
     cout << "La edad es: " << age << endl; 
 } 
 
+void Student::showStudent()
+{
+    cout << "Codigo del estudiante: " << studentCode << endl;
+    cout << "Nota final: " << finalNote << endl;
+}
 
 int main()
 {
+    Student student_obj("Isaac",22,"21321432",92.6);
     
+    student_obj.showPerson();
+    student_obj.showStudent();
 
     system ("pause");
     return 0;
